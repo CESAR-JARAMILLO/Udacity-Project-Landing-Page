@@ -36,7 +36,7 @@ const addClass = element => {
     element.classList.add('your-active-class');
 };
 
-// Removes active class from element
+// Removes active class to element
 const removeClass = element => {
     element.classList.remove('your-active-class');
 };
@@ -60,6 +60,16 @@ navBuild();
 
 // Add class 'active' to section when near top of viewport
 
+// Adds active class when near center of viewport and removes when away
+const nearTop = () => {
+    for (section of sections) {
+        if (domRect(section) < 100 && domRect(section) >= -100) {
+            addClass(section);
+        } else if (domRect(section) < 200 && domRect(section) >= -200) {
+            removeClass(section);
+        };
+    };   
+};
 
 
 
