@@ -25,6 +25,9 @@ const sections = document.querySelectorAll('section');
  * Start Helper Functions
  * 
 */
+const domRect = (section) => {
+    return Math.floor(section.getBoundingClientRect().top);
+};
 
 
 
