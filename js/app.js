@@ -71,7 +71,8 @@ const nearTop = () => {
     };   
 };
 
-
+// Activates nearTop function when scrolls by section element
+window.addEventListener('scroll', nearTop);
 
 
 // Scroll to anchor ID using scrollTO event
