@@ -25,11 +25,21 @@ const sections = document.querySelectorAll('section');
  * Start Helper Functions
  * 
 */
-const domRect = (section) => {
-    return Math.floor(section.getBoundingClientRect().top);
+
+// Returns element position from top of viewport
+const domRect = element => {
+    return Math.floor(element.getBoundingClientRect().top);
 };
 
+// Adds active class to element
+const addClass = element => {
+    element.classList.add('your-active-class');
+};
 
+// Removes active class from element
+const removeClass = element => {
+    element.classList.remove('your-active-class');
+};
 
 /**
  * End Helper Functions
@@ -51,8 +61,10 @@ navBuild();
 // Add class 'active' to section when near top of viewport
 
 
-// Scroll to anchor ID using scrollTO event
 
+
+
+// Scroll to anchor ID using scrollTO event
 
 /**
  * End Main Functions
