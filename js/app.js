@@ -61,7 +61,7 @@ const removeClass = element => {
 const navBuild = () => {
     for (section of sections) {
         const li = document.createElement('li');
-        li.innerHTML = `<a class="menu__link">${section.getAttribute('data-nav')}</a>`;
+        li.innerHTML = `<a onclick=sectionScroll(${section.getAttribute('id')}) class="menu__link">${section.getAttribute('data-nav')}</a>`;
         navList.append(li);
     }
 }
