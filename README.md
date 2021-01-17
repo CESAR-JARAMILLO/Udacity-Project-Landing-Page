@@ -2,12 +2,18 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Explanation](#explanation)
 
-## Instructions
+## Explanation
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+The javascript file has the majority of the app's functionality. It creates a nav item for each section on the page.
 
-To get started, open `js/app.js` and start building out the app's functionality
+Each nav item is created with a onclick event that contains a built function that will smoothly scroll to the corresponding section.
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+The nearTop function is used to add a active class to the section that is in the middle of the viewport, then remove it when it scrolls away.
+
+The HTML file was just adjusted to add another section.
+
+The CSS file was slightly adjusted to make the active section more clear which section is being viewed by adjusting the linear gradiant of the active class.
+
+The CSS was also adjusted for the nav links to be mobile friendly.
